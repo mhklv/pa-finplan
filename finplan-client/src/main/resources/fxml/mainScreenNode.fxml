@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.VBox">
+  <style>
+    <!-- -fx-alignment: center; -->
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+    <!-- -fx-background: yellow; -->
+  </style>
+  <children>
+    <MenuBar fx:id="menuBar" />
+    <HBox>
+      <style>
+        -fx-alignment: baseline-right;
+        -fx-padding: 5;
+      </style>
+      <RadioButton fx:id="envirSecRadioButton" text="Природоохранная деятельность">
+        <toggleGroup>
+          <ToggleGroup fx:id="sectionToggleGroup" />
+        </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="admEconSecRadioButton" text="Административно-хозяйственная деятельность" toggleGroup="$sectionToggleGroup"/>
+    </HBox>
+    <BorderPane fx:id="mainPane">
+      
+    </BorderPane>
+  </children>
+</fx:root>

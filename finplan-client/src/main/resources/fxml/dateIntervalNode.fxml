@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.HBox">
+  <style>
+    -fx-alignment: baseline-left;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+  
+  <children>
+    <VBox>
+      <HBox.margin>
+        <Insets top="0" bottom="0" left="20" right="20" />
+      </HBox.margin>
+      <Label text="Дата начала">
+      </Label>
+      <DatePicker fx:id="startDatePicker" />
+    </VBox>
+    
+    <VBox>
+      <HBox.margin>
+        <Insets top="0" bottom="0" left="20" right="20" />
+      </HBox.margin>
+      <Label text="Дата конца">
+      </Label>
+      <DatePicker fx:id="endDatePicker" />
+    </VBox>
+
+    <VBox>
+      <style>
+        -fx-alignment: center;
+      </style>
+      
+      <Button fx:id="deleteIntervalButton">
+        <VBox.margin>
+          <Insets top="10" bottom="10" left="10" right="10" />
+        </VBox.margin>
+      </Button>
+    </VBox>
+  </children>
+</fx:root>

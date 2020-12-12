@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.Pane?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.control.SplitPane">
+  <style>
+    -fx-alignment: center;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+  <items>
+    <TreeView fx:id="keyValuesTreeView" />
+    <VBox fx:id="rightPane">
+      <!-- <style> -->
+      <!--   -fx-alignment: center; -->
+      <!-- </style> -->
+    </VBox>
+    <!-- <ValueChosenTabPane fx:id="rightTabPane" /> -->
+    <!-- <ScrollPane fx:id="rightScrollPane"> -->
+      <!-- <style> -->
+      <!--   <!-\- -fx-unit-increment: 5 ; -\-> -->
+      <!--   <!-\- -fx-block-increment: 5 ; -\-> -->
+      <!-- </style> -->
+    <!-- </ScrollPane> -->
+  </items>
+</fx:root>

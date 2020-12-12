@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.BorderPane">
+  <style>
+    -fx-alignment: center;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+  <top>
+
+    <HBox>
+      
+      <VBox>
+        <Label text="Выберите столбцы, которые будут включены в файл">
+          <VBox.margin>
+            <Insets top="0" bottom="20" left="0" right="0" />
+          </VBox.margin>
+        </Label>
+        
+        <VBox fx:id="checkBoxesContainer1">
+          <style>
+            -fx-background-color: #e0e0e0;
+          </style>
+          
+          <VBox.margin>
+            <Insets top="0" bottom="10" left="0" right="0" />
+          </VBox.margin>
+        </VBox>
+
+        <VBox fx:id="checkBoxesContainer2">
+          <style>
+            -fx-background-color: #e0e0e0;
+          </style>
+          
+          <VBox.margin>
+            <Insets top="10" bottom="0" left="0" right="0" />
+          </VBox.margin>
+        </VBox>
+      </VBox>
+
+      <VBox>
+        <HBox.margin>
+          <Insets top="40" bottom="0" left="20" right="0" />
+        </HBox.margin>
+        
+        <VBox fx:id="admEconCheckBoxesContainer">
+          <HBox.margin>
+            <Insets top="40" bottom="0" left="30" right="0" />
+          </HBox.margin>
+        </VBox>
+
+        <VBox>
+          <VBox.margin>
+            <Insets top="60" bottom="0" left="40" right="0" />
+          </VBox.margin>
+
+          <HBox.margin>
+            <Insets top="0" bottom="0" left="100" right="0" />
+          </HBox.margin>
+          
+          <Label text="Выберите тип экспорта мероприятий">
+            <VBox.margin>
+              <Insets top="0" bottom="20" left="0" right="0" />
+            </VBox.margin>
+          </Label>
+          <ComboBox fx:id="eventTypesCBox">
+            <!-- <VBox.margin> -->
+            <!--   <Insets top="0" bottom="0" left="0" right="0" /> -->
+            <!-- </VBox.margin> -->
+          </ComboBox>
+
+          <HBox>
+
+            <VBox.margin>
+              <Insets top="60" bottom="0" left="0" right="0" />
+            </VBox.margin>
+            
+            <style>
+              -fx-alignment: baseline-left;
+            </style>
+            
+            <Label text="Год начала планового периода: " />
+            <ComboBox fx:id="firstYearComboBox">
+            </ComboBox>
+          </HBox>
+          
+        </VBox>
+      </VBox>
+      
+    </HBox>
+
+  </top>
+
+  <bottom>
+    <VBox>
+      <style>
+        -fx-alignment: center;
+      </style>
+      
+      <Label fx:id="messageLabel">
+        <style>
+          -fx-font-size: 2em;
+          -fx-text-fill: green;
+        </style>
+        
+        <VBox.margin>
+          <Insets top="10" bottom="5" left="0" right="0" />
+        </VBox.margin>
+      </Label>
+
+      <Button fx:id="exportButton" text="Выгрузить">
+        <VBox.margin>
+          <Insets top="0" bottom="0" left="0" right="30" />
+        </VBox.margin>
+      </Button>
+      
+    </VBox>
+  </bottom>
+    
+</fx:root>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ScrollPane?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.control.ScrollPane">
+  <style>
+    -fx-alignment: center;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+  <content>
+    <VBox>
+      <HBox>
+        <VBox>
+          <Label text="Название ключевой ценности" />
+          <TextField fx:id="keyValueNameField">
+            <VBox.margin>
+              <Insets top="5" bottom="0" left="10" right="20" />
+            </VBox.margin>
+          </TextField>
+          <HBox>
+            <Button fx:id="editKVNameButton" text="Редактировать название">
+              <HBox.margin>
+                <Insets top="30" bottom="0" left="10" right="10" />
+              </HBox.margin>
+            </Button>
+            <Button fx:id="deleteKVButton" text="Удалить ключевую ценность">
+              <HBox.margin>
+                <Insets top="30" bottom="0" left="10" right="10" />
+              </HBox.margin>
+            </Button>
+          </HBox>
+        </VBox>
+        <VBox>
+          <Label text="Описание" />
+          <TextArea fx:id="keyValueDescArea">
+            <prefColumnCount>30</prefColumnCount>
+          </TextArea>
+        </VBox>
+      </HBox>
+      <Button fx:id="addRationaleUnitButton" text="Добавить блок обоснования">
+        <style>
+          -fx-alignment: baseline-right;
+        </style>
+        <VBox.margin>
+          <Insets top="30" bottom="0" left="0" right="10" />
+        </VBox.margin>
+      </Button>
+      <VBox fx:id="rationaleUnitsBox">
+        
+      </VBox>
+    </VBox>
+  </content>
+</fx:root>

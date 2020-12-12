@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.HBox">
+  <style>
+    <!-- -fx-alignment: center; -->
+    -fx-alignment: center-left;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+
+  <!-- <VBox.margin> -->
+  <!--   <Insets top="0" bottom="0" left="180" right="0" /> -->
+  <!-- </VBox.margin> -->
+  
+  <children>
+    <Pane>
+      <prefWidth>
+        180
+      </prefWidth>
+    </Pane>
+    
+    <ScrollPane>
+      <fitToWidth>
+        true
+      </fitToWidth>
+      
+      <content>
+        <VBox fx:id="tasksBox">
+          <!-- <style> -->
+          <!--   -fx-fill-width: true; -->
+          <!-- </style> -->
+        </VBox>
+      </content>
+    </ScrollPane>
+    
+    <ScrollPane fx:id="eventsScrollPane">
+      <fitToWidth>
+        true
+      </fitToWidth>
+
+      <!-- <prefViewportWidth> -->
+      <!--   400 -->
+      <!-- </prefViewportWidth> -->
+      
+      <content>
+        <VBox>
+          <!-- <style> -->
+          <!--   -fx-fill-width: true; -->
+          <!-- </style> -->
+          
+          <Button fx:id="createEventButton" text="Создать новое мероприятие">
+            <VBox.margin>
+              <Insets top="30" bottom="30" left="10" right="10" />
+            </VBox.margin>
+          </Button>
+          <VBox fx:id="eventsBox">
+          </VBox>
+        </VBox>
+      </content>
+    </ScrollPane>
+    
+    <!-- <VBox> -->
+    <!--   <Label text="Индикатор состояния" /> -->
+    <!--   <TextField fx:id="condIndicatorNameField" /> -->
+    <!-- </VBox> -->
+    <!-- <VBox> -->
+    <!--   <Label text="Текущее значение" /> -->
+    <!--   <TextField fx:id="condIndicatorCurVal" /> -->
+    <!-- </VBox> -->
+    <!-- <VBox> -->
+    <!--   <Label text="Целевое значение" /> -->
+    <!--   <TextField fx:id="condIndicatorTargVal" /> -->
+    <!-- </VBox> -->
+    <!-- <Button fx:id="deleteCIButton"> -->
+    <!--   <text> -->
+    <!--     Удалить индикатор состояния -->
+    <!--   </text> -->
+    <!-- </Button> -->
+  </children>
+</fx:root>

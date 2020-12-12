@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.VBox">
+  <style>
+    -fx-alignment: center;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+  <children>
+    <Label text="Задача" />
+    <HBox>
+      <!-- <style> -->
+      <!--   -fx-alignment: center; -->
+      <!-- </style> -->
+      
+      <TextArea fx:id="taskArea">
+        <prefColumnCount>30</prefColumnCount>
+      </TextArea>
+      
+      <VBox>
+        <style>
+          -fx-alignment: center;
+        </style>
+        
+        <Button fx:id="deleteTaskButton">
+          <VBox.margin>
+            <Insets top="10" bottom="10" left="10" right="10" />
+          </VBox.margin>
+          
+          <!-- <text> -->
+          <!--   Удалить задачу -->
+          <!-- </text> -->
+        </Button>
+      </VBox>
+      
+    </HBox>
+  </children>
+</fx:root>

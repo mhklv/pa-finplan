@@ -1,0 +1,25 @@
+/* .customAlert { */
+/*     -fx-background-color: #f9d900; */
+/* } */
+/* .customAlert > *.button-bar > *.container{ */
+/*     -fx-background-color: #a9e200; */
+/* } */
+
+/* .customAlert > *.label.content{ */
+/*     -fx-font-size: 14pt; */
+/*     -fx-font-weight: bold; */
+/* } */
+
+/* .customAlert:header *.header-panel{ */
+/*     -fx-background-color: #a59c31; */
+/* } */
+
+/* .customAlert:header *.header-panel *.label{ */
+/*     -fx-font-size: 14pt; */
+/*     /\* -fx-font-style: italic; *\/ */
+/*     /\* -fx-fill: #292929; *\/ */
+/* } */
+
+* {
+    -fx-font-size: 14pt;
+}

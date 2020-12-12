@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.collections.FXCollections?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.VBox">
+  <style>
+    -fx-alignment: center;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+  <children>
+    <Label>
+      <style>
+        -fx-font: normal bold 18pt sans-serif;
+      </style>
+      <VBox.margin>
+        <Insets top="0" bottom="40" left="0" right="0" />
+      </VBox.margin>
+      <text>
+        Регистрация новой ООПТ
+      </text>
+    </Label>
+    <HBox>
+      <style>
+        -fx-alignment: center-right;
+        -fx-padding: 5;
+      </style>
+      <Label  text="Название ООПТ:">
+        <HBox.margin>
+          <Insets top="0" bottom="0" left="0" right="10" />
+        </HBox.margin>
+      </Label>
+      <TextField fx:id="PANameField" HBox.hgrow="ALWAYS" />
+    </HBox>
+    <HBox>
+      <style>
+        -fx-alignment: center-right;
+        -fx-padding: 5;
+      </style>
+      <Label  text="Пароль:">
+        <HBox.margin>
+          <Insets top="0" bottom="0" left="0" right="10" />
+        </HBox.margin>
+      </Label>
+      <PasswordField fx:id="passwordField" HBox.hgrow="ALWAYS" />
+    </HBox>
+    <HBox>
+      <style>
+        -fx-alignment: center-right;
+        -fx-padding: 5;
+      </style>
+      <Label  text="Подтвердите пароль:">
+        <HBox.margin>
+          <Insets top="0" bottom="0" left="0" right="10" />
+        </HBox.margin>
+      </Label>
+      <PasswordField fx:id="passwordRepField" HBox.hgrow="ALWAYS" />
+    </HBox>
+    <HBox>
+      <style>
+        -fx-alignment: center-right;
+        -fx-padding: 5;
+      </style>
+      <Label  text="Ключ регистрации:">
+        <HBox.margin>
+          <Insets top="0" bottom="0" left="0" right="10" />
+        </HBox.margin>
+      </Label>
+      <TextField fx:id="regQuotaField" HBox.hgrow="ALWAYS" />
+    </HBox>
+    <HBox>
+      <style>
+        -fx-alignment: center;
+        -fx-padding: 20;
+      </style>
+      <children>
+        <Button fx:id="registerButton" text="Зарегистрировать">
+          <HBox.margin>
+            <Insets top="0" bottom="0" left="0" right="10" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="cancelButton" text="Назад">
+          <HBox.margin>
+            <Insets top="0" bottom="0" left="10" right="0" />
+          </HBox.margin>
+        </Button>
+      </children>
+    </HBox>
+  </children>
+</fx:root>

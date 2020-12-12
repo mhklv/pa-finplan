@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.control.SplitPane">
+  <style>
+    -fx-alignment: center;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+  <items>
+    <VBox>
+      <HBox>
+        <Button fx:id="backButton" text="Назад">
+          <HBox.margin>
+            <Insets top="10" bottom="10" left="10" right="10" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="newExpenseButton" text="Новый расход">
+          <HBox.margin>
+            <Insets top="10" bottom="10" left="10" right="10" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="deleteExpenseButton" text="Удалить расход">
+          <HBox.margin>
+            <Insets top="10" bottom="10" left="10" right="10" />
+          </HBox.margin>
+        </Button>
+      </HBox>
+      <TableView fx:id="budgetTableView">
+      </TableView>
+
+      <HBox>
+        <style>
+          -fx-alignment: center-right;
+          -fx-padding: 5;
+        </style>
+        <Label text="Всего:   ">
+          <style>
+            -fx-font-weight: bold;
+          </style>
+        </Label>
+
+        <Label fx:id="sumLabel">
+          <style>
+            -fx-font-weight: bold;
+          </style>
+        </Label>
+      </HBox>
+      
+      <TextArea fx:id="eventTextArea">
+      </TextArea>
+    </VBox>
+    
+    <ScrollPane>
+      <style>
+        <!-- -fx-alignment: baseline-left; -->
+        -fx-fit-to-width: true;
+      </style>
+      <content>
+        <VBox>
+          <VBox>
+            <style>
+              -fx-alignment: center-left;
+            </style>
+
+            <HBox>
+              <VBox.margin>
+                <Insets top="10" bottom="20" left="0" right="0" />
+              </VBox.margin>
+              <style>
+                <!-- -fx-alignment: baseline-right; -->
+                -fx-alignment: center-right;
+              </style>
+              <Label text="Программа ООПТ: ">
+                <HBox.margin>
+                  <Insets top="0" bottom="0" left="0" right="10" />
+                </HBox.margin>
+              </Label>
+              <ComboBox fx:id="programmeChoiceBox">
+              </ComboBox>
+            </HBox>
+            
+            <HBox>
+              <VBox.margin>
+                <Insets top="0" bottom="20" left="0" right="0" />
+              </VBox.margin>
+              <style>
+                <!-- -fx-alignment: baseline-right; -->
+                -fx-alignment: center-right;
+              </style>
+              <Label text="Отдел ООПТ: ">
+                <HBox.margin>
+                  <Insets top="0" bottom="0" left="0" right="10" />
+                </HBox.margin>
+              </Label>
+              <ComboBox fx:id="departmentChoiceBox">
+              </ComboBox>
+            </HBox>
+            
+            <HBox>
+              <VBox.margin>
+                <Insets top="0" bottom="20" left="0" right="0" />
+              </VBox.margin>
+              <style>
+                <!-- -fx-alignment: baseline-right; -->
+                -fx-alignment: center-right;
+              </style>
+              <Label text="Источник финансирования: ">
+                <HBox.margin>
+                  <Insets top="0" bottom="0" left="0" right="10" />
+                </HBox.margin>
+              </Label>
+              <ComboBox fx:id="finSrcComboBox">
+              </ComboBox>
+            </HBox>
+          </VBox>
+
+          <VBox>
+            <Button fx:id="addNewDateIntervalButton" text="Добавить даты проведения">
+              <VBox.margin>
+                <Insets top="40" bottom="15" left="20" right="0" />
+              </VBox.margin>
+            </Button>
+            
+            <VBox fx:id="dateIntervalsBox">
+              <style>
+                -fx-alignment: center-left;
+              </style>
+            </VBox>
+          </VBox>
+          
+          <VBox>
+            <style>
+              -fx-padding: 10;
+            </style>
+            
+            <Label text="Партнёры:">
+            </Label>
+            <TextArea fx:id="partnerOrgsArea">
+            </TextArea>
+          </VBox>
+          
+        </VBox>
+      </content>
+    </ScrollPane>
+  </items>
+</fx:root>

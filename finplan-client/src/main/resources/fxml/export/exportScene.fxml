@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.Scene">
+  <style>
+    -fx-alignment: center-left;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+</fx:root>

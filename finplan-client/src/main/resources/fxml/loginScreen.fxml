@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.RadioButton?>
+
+
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.BorderPane">
+  <style>
+    -fx-alignment: center;
+    -fx-padding: 5;
+    -fx-font-size: 1em;
+  </style>
+  <top>
+    <HBox>
+      <style>
+        -fx-alignment: baseline-right;
+        -fx-padding: 5;
+      </style>
+      <RadioButton fx:id="networkModeRadioButton" text="Сетевой режим">
+        <toggleGroup>
+          <ToggleGroup fx:id="modeToggleGroup" />
+        </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="localModeRadioButton" text="Локальный режим" toggleGroup="$modeToggleGroup"/>
+    </HBox>
+  </top>
+
+  <center>
+    <HBox>
+      <VBox HBox.hgrow="ALWAYS" >
+        <style>
+          -fx-alignment: center;
+          -fx-padding: 5;
+        </style>
+        <Label text="Доступные ООПТ" />
+        <ListView fx:id="PAsListView" VBox.vgrow="ALWAYS" />
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+        <style>
+          -fx-alignment: center;
+          -fx-padding: 5;
+        </style>
+        <children>
+          <HBox>
+            <style>
+              -fx-alignment: center;
+              -fx-padding: 5;
+            </style>
+            <children>
+              <Label  text="Пароль:">
+                <HBox.margin>
+                  <Insets top="0" bottom="0" left="0" right="10" />
+                </HBox.margin>
+              </Label>
+              <PasswordField fx:id="passwordField" />
+            </children>
+          </HBox>
+          <HBox>
+            <style>
+              -fx-alignment: center;
+              -fx-padding: 20;
+            </style>
+            <children>
+              <Button fx:id="registerButton" text="Новая ООПТ...">
+                <HBox.margin>
+                  <Insets top="0" bottom="0" left="0" right="10" />
+                </HBox.margin>
+              </Button>
+              <Button fx:id="authorizeButton" text="Войти">
+                <HBox.margin>
+                  <Insets top="0" bottom="0" left="10" right="0" />
+                </HBox.margin>
+              </Button>
+            </children>
+          </HBox>
+        </children>
+      </VBox>
+    </HBox>
+  </center>
+</fx:root>
